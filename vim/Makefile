@@ -1,0 +1,2 @@
+symlink:
+	bash symlink.sh
