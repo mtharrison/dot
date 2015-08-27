@@ -6,8 +6,8 @@
 
 ########## Variables
 
-dir=~/developer/dotfiles                          # dotfiles directory
-olddir=~/developer/dotfiles_old                   # old dotfiles backup directory
+dir=~/developer/dot                          # dotfiles directory
+olddir=~/dotfiles_old                   # old dotfiles backup directory
 files="gitconfig profile vimrc vim"     # list of files/folders to symlink in homedir
 
 ##########
