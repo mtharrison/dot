@@ -4,7 +4,7 @@ filetype plugin indent on
 
 " NERDTree
 map <leader>n :NERDTreeToggle<CR>
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 
 " Syntax and colors
 syntax enable

@@ -142,7 +142,7 @@
     # Use the Git 1.x.x default to avoid errors on machines with old Git
     # installations. To use `simple` instead, add this to your `~/.extra` file:
     # `git config --global push.default simple`. See http://git.io/mMah-w.
-    default = matching
+	default = current
 
 # URL shorthands
 
@@ -166,11 +166,11 @@
 
     insteadOf = "gist:"
 [difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [user]
     name = Matt Harrison
     email = hi@matt-harrison.com
