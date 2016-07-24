@@ -1,19 +1,23 @@
-snippet hapiserver
-var Hapi = require('hapi');
+snippet hapi
+const Hapi = require('hapi');
 
-var server = new Hapi.Server();
+const server = new Hapi.Server();
 server.connection({ port: ${1:4000} });
 
 server.route({
 	method: '${2:GET}',
 	path: '/${3}',
 	handler: function (request, reply) {
-	
-		reply('ok');
-	}
+
+        reply('ok');
+    }
 });
 
-server.start(function () {
-	console.log('Server started!');	
+server.start((err) => {
+
+    if (err) {
+        throw err;
+    }
+    console.log('Server started!');	
 });
 endsnippet

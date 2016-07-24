@@ -81,7 +81,7 @@
 [core]
 
     # Use custom `.gitignore` and `.gitattributes`
-    excludesfile = /Users/mattharrison/.gitignore
+	excludesfile = /Users/mattharrison/.gitignore
     attributesfile = ~/.gitattributes
 
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -172,5 +172,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-    name = Matt Harrison
-    email = hi@matt-harrison.com
+	name = Matt Harrison
+	email = hi@matt-harrison.com
+[commit]
+	template = /Users/mattharrison/.stCommitMsg
